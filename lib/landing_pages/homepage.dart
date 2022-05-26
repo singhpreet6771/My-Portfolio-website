@@ -39,13 +39,19 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Text(
-                  "WELCOME!",
-                  style: GoogleFonts.biryani(
-                      fontStyle: FontStyle.normal,
-                      fontSize: size.width * 0.012,
-                      color: underlineColor,
-                      fontWeight: FontWeight.bold),
+                TextButton(
+                  onPressed: () {
+                    navItemClicked(0);
+                  },
+                  child: Text(
+                    "WELCOME!",
+                    style: GoogleFonts.biryani(
+                        fontStyle: FontStyle.normal,
+                        fontSize: size.width * 0.012,
+                        color: underlineColor,
+                        fontWeight: FontWeight.bold),
+                  ),
+
                 ),
                 Spacer(),
                 Row(
@@ -89,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 20.0,
                     ),
                     Link(
-                        uri: Uri.parse(resume),
+                        uri: Uri.parse("https://drive.google.com/file/d/1TIvtSP9a4i0JmajMBtmdxnoUkQBQ0Y-y/view?usp=sharing"),
                         target: LinkTarget.blank,
                         builder: (context, followLink) {
                           return ElevatedButton(

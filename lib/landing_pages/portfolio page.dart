@@ -36,26 +36,13 @@ class _MyPortfolioPageState extends State<MyPortfolioPage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      AnimatedTextKit(
-                        repeatForever: true,
-                        animatedTexts: [
-                          TyperAnimatedText(
-                            "WELCOME TO MY PORTFOLIO",
-                            textStyle: GoogleFonts.biryani(
-                                fontStyle: FontStyle.normal,
-                                fontSize: size.width * 0.025,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w600),
-                          ),
-                          TyperAnimatedText(
-                            "WELCOME TO MY PORTFOLIO",
-                            textStyle: GoogleFonts.biryani(
-                                fontStyle: FontStyle.normal,
-                                fontSize: size.width * 0.025,
-                                color: underlineColor,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ],
+                      Text(
+                        "WELCOME TO MY PORTFOLIO",
+                        style: GoogleFonts.biryani(
+                            fontStyle: FontStyle.normal,
+                            fontSize: size.width * 0.025,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600),
                       ),
                     ],
                   ),
@@ -66,13 +53,26 @@ class _MyPortfolioPageState extends State<MyPortfolioPage> {
           SizedBox(
             height: defaultPadding,
           ),
-          Text(
-            "MY SKILLS",
-            style: GoogleFonts.biryani(
-                fontStyle: FontStyle.normal,
-                fontSize: size.width * 0.014,
-                color: secondaryColor,
-                fontWeight: FontWeight.bold),
+          AnimatedTextKit(
+            repeatForever: true,
+            animatedTexts: [
+              TyperAnimatedText(
+                "MY SKILLS",
+                textStyle: GoogleFonts.biryani(
+                    fontStyle: FontStyle.normal,
+                    fontSize: size.width * 0.016,
+                    color: secondaryColor,
+                    fontWeight: FontWeight.w600),
+              ),
+              TyperAnimatedText(
+                "MY SKILLS",
+                textStyle: GoogleFonts.biryani(
+                    fontStyle: FontStyle.normal,
+                    fontSize: size.width * 0.016,
+                    color: underlineColor,
+                    fontWeight: FontWeight.w600),
+              ),
+            ],
           ),
           SizedBox(
             height: defaultPadding / 2,
@@ -110,8 +110,8 @@ class _MyPortfolioPageState extends State<MyPortfolioPage> {
                                   backgroundColor: secondaryColor,
                                   strokeWidth: 6,
                                 ),
-                                height: 90,
-                                width: 90,
+                                height: size.height*0.11,
+                                width: size.height*0.11,
                               ),
                             ),
                             Center(
@@ -157,13 +157,26 @@ class _MyPortfolioPageState extends State<MyPortfolioPage> {
           SizedBox(
             height: defaultPadding,
           ),
-          Text(
-            "MY PROJECTS",
-            style: GoogleFonts.biryani(
-                fontStyle: FontStyle.normal,
-                fontSize: size.width * 0.014,
-                color: secondaryColor,
-                fontWeight: FontWeight.bold),
+          AnimatedTextKit(
+            repeatForever: true,
+            animatedTexts: [
+              TyperAnimatedText(
+                "MY PROJECTS",
+                textStyle: GoogleFonts.biryani(
+                    fontStyle: FontStyle.normal,
+                    fontSize: size.width * 0.016,
+                    color: secondaryColor,
+                    fontWeight: FontWeight.w600),
+              ),
+              TyperAnimatedText(
+                "MY PROJECTS",
+                textStyle: GoogleFonts.biryani(
+                    fontStyle: FontStyle.normal,
+                    fontSize: size.width * 0.016,
+                    color: underlineColor,
+                    fontWeight: FontWeight.w600),
+              ),
+            ],
           ),
           SizedBox(
             height: defaultPadding / 2,
@@ -217,13 +230,26 @@ class _MyPortfolioPageState extends State<MyPortfolioPage> {
           SizedBox(
             height: defaultPadding,
           ),
-          Text(
-            "MY EXPERIENCE",
-            style: GoogleFonts.biryani(
-                fontStyle: FontStyle.normal,
-                fontSize: size.width * 0.014,
-                color: secondaryColor,
-                fontWeight: FontWeight.bold),
+          AnimatedTextKit(
+            repeatForever: true,
+            animatedTexts: [
+              TyperAnimatedText(
+                "MY WORK EXPERIENCE",
+                textStyle: GoogleFonts.biryani(
+                    fontStyle: FontStyle.normal,
+                    fontSize: size.width * 0.016,
+                    color: secondaryColor,
+                    fontWeight: FontWeight.w600),
+              ),
+              TyperAnimatedText(
+                "MY WORK EXPERIENCE",
+                textStyle: GoogleFonts.biryani(
+                    fontStyle: FontStyle.normal,
+                    fontSize: size.width * 0.016,
+                    color: underlineColor,
+                    fontWeight: FontWeight.w600),
+              ),
+            ],
           ),
           SizedBox(
             height: defaultPadding / 2,

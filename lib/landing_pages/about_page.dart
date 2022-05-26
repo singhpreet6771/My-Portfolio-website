@@ -59,7 +59,7 @@ class AboutPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         vertical: 8.0, horizontal: defaultPadding),
                     child: Text(
-                      "Hi, I am a Student, currently persuing my Graduation from Punjab. Apart from that am also a Software Developer. I have developed my projects that are mentioned in the portfolio section as well as in my resume. I have also done an Internship with a pure based company where I was assigned a job to create an flutter application from scratch. You can see my work in the links mentioned below.",
+                      "Hi, I am a Student, currently persuing my Graduation from Punjab. Apart from that am also a Software Developer. I have developed my projects that are mentioned in the portfolio section as well as in my resume. I have also done an Internship with a pune based company where I was assigned a job to create an flutter application from scratch. You can see my work in the links mentioned below.",
                       style: GoogleFonts.biryani(
                           fontSize: size.width * 0.01, color: secondaryColor),
                     ),
@@ -273,7 +273,7 @@ class AboutPage extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               Text(
-                "$what address copied to clipboard",
+                "$what will be copied to clipboard",
                 style: TextStyle(fontSize: 16.0),
               ),
               SizedBox(
